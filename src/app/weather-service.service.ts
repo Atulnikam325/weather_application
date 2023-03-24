@@ -11,7 +11,7 @@ export class WeatherServiceService {
 
   constructor(private http:HttpClient) {  }
 
-  getWeatherData(){
-    return this.http().get()
+  getWeatherData(city:any){
+    return this.http.get(this.url1 + city + this.url2)
   }
 }

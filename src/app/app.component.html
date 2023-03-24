@@ -2,5 +2,19 @@
   <nav>
     <div><a routerLink="land">Weather-Application</a></div>
   </nav>
+  <div>
+    <input type="text" name="text" #box value="amaravati">
+    <button (click)="getWeatherDetails(box.value)">Fetch Data</button>
+  </div>
+   <div *ngIf="data">
+      <h1>{{data.name}}</h1>
+     <h1>{{data.main.temp}}</h1>
+      <h1>{{data.main.temp_min}}</h1>
+      <h1>{{data.main.temp_max}}</h1>
+      <h1>{{data.main.pressure}}</h1>
+      <h1>{{data.main.humidity}}</h1>
+      <h1>{{data.wind.speed}}</h1>
+      <h1>{{data.sys.country}}</h1>
+  </div> 
   <router-outlet></router-outlet>
 </div>
