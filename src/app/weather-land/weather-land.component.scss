@@ -1,12 +1,13 @@
-.container{
-    height: 40vh;
-    width: 40vw;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    left: 450px;
-    top: 100px;
+
+.box{
+    input{
+        height: 30px;
+        width: 300px;
+        font-size: 20px;
+    }
+    button{
+        width: 200px;
+    }
+
+  
 }

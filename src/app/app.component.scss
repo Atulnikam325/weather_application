@@ -3,7 +3,22 @@ nav{
     background-color: cornflowerblue;
 }
 a{
-    font-size: larger;
+    font-size: 40px;
     color: white;
     text-decoration: none;
+}
+.image{
+    background-image: url('https://news.uchicago.edu/sites/default/files/images/image/20161202/storm-sized.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
 }

@@ -1,5 +1,14 @@
-<div class="container">
-    <div>
-        <input type="text">Enter City Name
-    </div>
-</div>
+<div class="box" >
+    <input type="text" name="text" #box >
+    <button (click)="getWeatherDetails(box.value)">Fetch Data</button>
+  </div >
+   <div *ngIf="data">
+      <p><b>City :</b>{{data.name}}</p>
+     <p><b>Temprature :</b>{{data.main.temp}}</p>
+      <p><b>Minimum Temprature :</b>{{data.main.temp_min}}</p>
+      <p><b>Maximum Temprature :</b>{{data.main.temp_max}}</p>
+      <p><b>Pressure :</b>{{data.main.pressure}}</p>
+      <p><b>Humidity :</b>{{data.main.humidity}}</p>
+      <p><b>Speed :</b>{{data.wind.speed}}</p>
+      <p><b>Country :</b>{{data.sys.country}}</p>
+  </div> 
