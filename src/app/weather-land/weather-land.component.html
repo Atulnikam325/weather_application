@@ -4,11 +4,11 @@
   </div >
    <div *ngIf="data">
       <p><b>City :</b>{{data.name}}</p>
-     <p><b>Temprature :</b>{{data.main.temp}}</p>
-      <p><b>Minimum Temprature :</b>{{data.main.temp_min}}</p>
-      <p><b>Maximum Temprature :</b>{{data.main.temp_max}}</p>
-      <p><b>Pressure :</b>{{data.main.pressure}}</p>
-      <p><b>Humidity :</b>{{data.main.humidity}}</p>
-      <p><b>Speed :</b>{{data.wind.speed}}</p>
+     <p><b>Temprature :</b>{{data.main.temp}}<sup>o</sup>C</p>
+      <p><b>Minimum Temprature :</b>{{data.main.temp_min}}<sup>o</sup>C</p>
+      <p><b>Maximum Temprature :</b>{{data.main.temp_max}}<sup>o</sup>C</p>
+      <p><b>Pressure :</b>{{data.main.pressure}} N/m <sup>2</sup></p>
+      <p><b>Humidity :</b>{{data.main.humidity}}kg/m <sup>3</sup></p>
+      <p><b>Speed :</b>{{data.wind.speed}} m/s</p>
       <p><b>Country :</b>{{data.sys.country}}</p>
   </div> 
