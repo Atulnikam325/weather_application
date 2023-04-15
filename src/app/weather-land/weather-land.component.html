@@ -1,6 +1,6 @@
 <div class="box" >
-    <input type="text" name="text" #box >
-    <button (click)="getWeatherDetails(box.value)">Fetch Data</button>
+    <input type="text" name="text" placeholder="Enter City Name" #box >
+    <button (click)="getWeatherDetails(box.value)">Check Weather</button>
   </div >
    <div *ngIf="data">
       <p><b>City :</b>{{data.name}}</p>
