@@ -6,7 +6,7 @@ const routes: Routes = [
   {path:'land',component:WeatherLandComponent}
 ];
 
-@NgModule({
+@NgModule ({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
